@@ -110,3 +110,23 @@ let locate = 'JimBob59';
 var selectedUser = users.find((user) => {
   return user.username === locate;
 });
+//************************************************************
+const shoes = [
+    { name: 'Nike', price: 200 },
+    { name: 'Red Wings', price: 250 },
+    { name: 'Vans', price: 150 },
+    { name: 'Converse', price: 160 },
+    { name: 'Reebok', price: 130 },
+    { name: 'New Balance', price: 175 },
+    { name: 'Adidas', price: 95 },
+    { name: 'Keds', price: 140 },
+    { name: 'Crocs', price: 135 }
+  ];
+
+  let retailPrice = 100;
+  
+  let lessThan100 = shoes.find((item) => {
+    return item.price < retailPrice;
+  });
+console.log(lessThan100);
+
