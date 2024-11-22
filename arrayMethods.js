@@ -149,4 +149,7 @@ const moreThan = (shoe) => shoe.price >= priceQuery;
 const lessThan = (shoe) => shoe.price <= priceQuery;
 
 console.log(shoes.every(moreThan));
+//************************************************************
+//************************************************************
+// FILTER
 
