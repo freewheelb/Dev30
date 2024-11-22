@@ -106,12 +106,7 @@ var users = [
     { id: 10, username: 'Yoni45', admin: false }
   ]
 
-  let locate = 'Jessica40';
-
-function locateUser(user) {
-    return users.find((element) => element.username === user)
-};
-let locationStatus = locateUser(locate);
-
-console.log(locationStatus);
-
+let locate = 'JimBob59';
+var selectedUser = users.find((user) => {
+  return user.username === locate;
+});
