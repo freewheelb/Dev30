@@ -129,4 +129,24 @@ const shoes = [
     return item.price < retailPrice;
   });
 console.log(lessThan100);
+//************************************************************
+//************************************************************
+// EVERY / SOME
+var shoes = [
+    { name: 'Nike', price: 200 },
+    { name: 'Red Wings', price: 250 },
+    { name: 'Vans', price: 50 },
+    { name: 'Converse', price: 60 },
+    { name: 'Reebok', price: 130 },
+    { name: 'New Balance', price: 75 },
+    { name: 'Adidas', price: 95 },
+    { name: 'Keds', price: 40 },
+    { name: 'Crocs', price: 35 }
+];
+const priceQuery = 50;
+
+const moreThan = (shoe) => shoe.price >= priceQuery;
+const lessThan = (shoe) => shoe.price <= priceQuery;
+
+console.log(shoes.every(moreThan));
 
