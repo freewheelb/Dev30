@@ -152,4 +152,19 @@ console.log(shoes.every(moreThan));
 //************************************************************
 //************************************************************
 // FILTER
+var posts = [
+    { text: "cursus in hac habitasse platea", platform: "twitter" },
+    { text: "egestas erat imperdiet sed euismod", platform: "facebook" },
+    { text: "risus viverra adipiscing at in", platform: "facebook" },
+    { text: "ullamcorper eget nulla facilisi etiam", platform: "instagram" },
+    { text: "feugiat pretium nibh ipsum consequat", platform: "twitter" },
+    { text: "sit amet mattis vulputate enim", platform: "facebook" },
+];
+
+var tweets = posts.filter((post) =>{
+    return post.platform === "facebook";
+});
+
+
+console.log(tweets);
 
